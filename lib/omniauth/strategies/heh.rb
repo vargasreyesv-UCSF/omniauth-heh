@@ -7,12 +7,13 @@ module OmniAuth
       option :name, "heh"
 
       option :client_options, {
-        :site          => 'https://api.ihealthlabs:8443',
-        :authorize_url => '/api/OAuthv2/userauthorization.ashx'
-        :token_url  => '/api/OAuthv2/userauthorization.ashx',
+        :site          => 'http://calm-peak-1397.herokuapp.com',
+        :request_token_path => '/oauth/request_token',
+        :access_token_path  => '/oauth/access_token',
+        :authorize_path     => '/oauth/authorize'
       }
 
-      uid { raw_info['id'] }
+      uid { raw_info['user_id'] }
 
       credentials do
         hash = {'token' => access_token.token}
