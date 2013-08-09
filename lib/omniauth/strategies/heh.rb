@@ -13,8 +13,6 @@ module OmniAuth
         :authorize_path     => '/oauth/authorize'
       }
 
-      uid { raw_info['user_id'] }
-
       credentials do
         hash = {'token' => access_token.token}
         hash
