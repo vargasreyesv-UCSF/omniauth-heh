@@ -4,15 +4,12 @@ require 'multi_json'
 module OmniAuth
   module Strategies
     class Heh < OAuth2
-      def initialize(app, client_id = nil, client_secret = nil, options = {}, &block)
-        client_options = {
-          :site => 'http://localhost:3000',
-          :authorize_path => '/oauth/authorize',
-          :access_token_path => '/oauth/access_token'
-        }
-
-        super(app, :active, client_id, client_secret, client_options, options, &block)
-      end
+      client_options = {
+        :site => 'http://localhost:3000',
+        :request_token_path => '/oauth/request_token',
+        :authorize_path => '/oauth/authorize',
+        :access_token_path => '/oauth/access_token'
+      }
 
       protected
       
