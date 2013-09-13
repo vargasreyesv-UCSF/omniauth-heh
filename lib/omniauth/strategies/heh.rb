@@ -7,7 +7,7 @@ module OmniAuth
       option :name, "heh"
  
       option :client_options, {
-        :site          => 'http://localhost:3000',
+        :site          => 'https://dev.health-eheartstudy.org',
         :request_token_path => '/oauth/request_token',
         :access_token_path  => '/oauth/access_token',
         :authorize_path     => '/oauth/authorize'
