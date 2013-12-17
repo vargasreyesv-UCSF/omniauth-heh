@@ -3,10 +3,10 @@ require File.expand_path('../lib/omniauth-heh/version', __FILE__)
 
 Gem::Specification.new do |gem|
   gem.authors       = ["Victor Vargas"]
-  gem.email         = ["v.vargas2009@gmail.com.com"]
-  gem.description   = %q{OmniAuth strategy for health-ehearth.org}
-  gem.summary       = %q{OmniAuth strategy for health-ehearth.org}
-  gem.homepage      = "https://github.com/victor-vargas2009/omniauth-heh"
+  gem.email         = ["vargasereyesv@medsch.ucsf.edu"]
+  gem.description   = %q{OmniAuth strategy for heh.com.}
+  gem.summary       = %q{OmniAuth strategy for heh.com.}
+  gem.homepage      = "https://github.com/vargasreyesv-UCSF/omniauth-heh"
 
   gem.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   gem.files         = `git ls-files`.split("\n")
